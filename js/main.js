@@ -23,7 +23,7 @@ Q.Sprite.extend("Player",{
 	}
 });
 
-Q.sprite.extend("VerticalEnemy",{
+Q.Sprite.extend("VerticalEnemy",{
 	init:function(p){
 		this._super(p,{vy: -100, rangeY:200, gravity:0});
 		this.add("2d");
@@ -35,7 +35,7 @@ Q.sprite.extend("VerticalEnemy",{
 	step:function(dt){
 		// TODO: Update movement in game loop
 	}
-})
+});
 
 Q.scene("level1",function(stage) {          
 	var background = new Q.TileLayer({ dataAsset: 'myLevel.tmx', layerIndex: 0, sheet: 'tiles', tileW: 70, tileH: 70, type: Q.SPRITE_NONE });
